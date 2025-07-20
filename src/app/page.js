@@ -125,7 +125,7 @@ const handleTouchEnd = () => {
   <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
     <path d="M20.52 3.48A11.81 11.81 0 0 0 12.01 0 11.9 11.9 0 0 0 0 12c0 2.1.55 4.16 1.6 5.97L0 24l6.25-1.63A11.84 11.84 0 0 0 12 24c6.63 0 12-5.37 12-12a11.85 11.85 0 0 0-3.48-8.52zM12 21.75c-1.82 0-3.6-.48-5.17-1.4l-.37-.22-3.7.96.99-3.59-.24-.38a9.79 9.79 0 0 1-1.48-5.14c0-5.42 4.41-9.83 9.83-9.83 2.63 0 5.1 1.03 6.96 2.89a9.78 9.78 0 0 1 2.87 6.94c0 5.42-4.41 9.83-9.83 9.83zm5.38-7.46c-.3-.15-1.78-.88-2.06-.98-.27-.1-.47-.15-.67.15s-.77.98-.94 1.18c-.17.2-.34.22-.63.07-.3-.15-1.27-.47-2.42-1.5-.89-.79-1.49-1.77-1.66-2.06-.17-.3-.02-.45.13-.6.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.91-2.2-.24-.59-.48-.51-.67-.52h-.57c-.2 0-.52.07-.8.37s-1.05 1.03-1.05 2.52c0 1.5 1.08 2.94 1.23 3.14.15.2 2.11 3.23 5.13 4.53.72.31 1.29.5 1.73.64.73.23 1.4.2 1.93.12.59-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.18-1.43-.08-.13-.26-.2-.55-.35z"/>
   </svg>
-  Chat on WhatsApp
+   WhatsApp
 </a>
 
 </div>
@@ -467,7 +467,7 @@ const handleTouchEnd = () => {
       />
 </span>
                 </a>
-                <a href="mailto:bipul@chhetri06@gmail.com" className="text-gray-400 hover:text-cyan-400 transition-colors">
+                <a href="mailto:bipulchhetri06@gmail.com" className="text-gray-400 hover:text-cyan-400 transition-colors">
                   <span className="text-2xl">
                   <Image 
         src="/images/bipul-chhetri -email.png" 
@@ -492,7 +492,7 @@ const handleTouchEnd = () => {
               <h3 className="text-lg font-bold text-white mb-4">Contact</h3>
               <div className="space-y-2">
                 <p className="text-gray-400">📱 +91 73638 33189</p>
-                <p className="text-gray-400">📧 bipul@chhetri.dev</p>
+                <p className="text-gray-400">📧 bipulchhetri06@gmail.com</p>
                 <a 
                   href="https://wa.me/917363833189?text=Hi%20Bipul,%20I%20want%20to%20discuss%20my%20project"
                   className="bg-green-500 text-white px-4 py-2 rounded-full text-sm hover:bg-green-600 transition-colors inline-block mt-2"
