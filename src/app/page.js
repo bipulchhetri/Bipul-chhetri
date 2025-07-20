@@ -1,12 +1,32 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState, useEffect,useRef } from 'react'
 import Image from 'next/image'
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
   const [currentService, setCurrentService] = useState(0)
+// slider
+const touchStartX = useRef(0);
+const touchEndX = useRef(0);
 
+const handleTouchStart = (e) => {
+  touchStartX.current = e.touches[0].clientX;
+};
+
+const handleTouchMove = (e) => {
+  touchEndX.current = e.touches[0].clientX;
+};
+
+const handleTouchEnd = () => {
+  const diff = touchStartX.current - touchEndX.current;
+
+  if (diff > 50 && currentTestimonial < testimonials.length - 1) {
+    setCurrentTestimonial((prev) => prev + 1); // swipe left → next
+  } else if (diff < -50 && currentTestimonial > 0) {
+    setCurrentTestimonial((prev) => prev - 1); // swipe right → previous
+  }
+};
   const testimonials = [
     {
       name: "Rajesh Sharma",
@@ -429,7 +449,7 @@ export default function Home() {
                 Transforming businesses through stunning custom websites, professional lawyer sites, and expert SEO consulting. Let's make your business the #1 choice in your industry.
               </p>
               <div className="flex space-x-4">
-                <a href="https://github.com/bipulchhetri" className="text-gray-400 hover:text-cyan-400 transition-colors">
+                <a href="https://www.facebook.com/profile.php?id=61578202725154" className="text-gray-400 hover:text-cyan-400 transition-colors">
                   <span className="text-2xl"><Image 
         src="/images/bipul-chhetr-facebook.png" 
         alt="bipul chhetri facebook" 
@@ -438,7 +458,7 @@ export default function Home() {
       />
 </span>
                 </a>
-                <a href="https://linkedin.com/in/bipulchhetri" className="text-gray-400 hover:text-cyan-400 transition-colors">
+                <a href="https://wa.me/917363833189" className="text-gray-400 hover:text-cyan-400 transition-colors">
                   <span className="text-2xl"><Image 
         src="/images/bipul-chhetri-Whatsapp.png" 
         alt="bipul chhetri Whatsapp" 
@@ -447,7 +467,7 @@ export default function Home() {
       />
 </span>
                 </a>
-                <a href="mailto:bipul@chhetri.dev" className="text-gray-400 hover:text-cyan-400 transition-colors">
+                <a href="mailto:bipul@chhetri06@gmail.com" className="text-gray-400 hover:text-cyan-400 transition-colors">
                   <span className="text-2xl">
                   <Image 
         src="/images/bipul-chhetri -email.png" 
