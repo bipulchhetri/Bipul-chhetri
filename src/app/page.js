@@ -84,12 +84,12 @@ const handleTouchEnd = () => {
     // Auto-slide testimonials on mobile
     const testimonialInterval = setInterval(() => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)
-    }, 5000)
+    }, 2000)
 
     // Auto-slide services on mobile
     const serviceInterval = setInterval(() => {
       setCurrentService((prev) => (prev + 1) % services.length)
-    }, 6000)
+    }, 2000)
 
     return () => {
       clearInterval(testimonialInterval)
