@@ -54,7 +54,7 @@ const handleTouchEnd = () => {
   const services = [
     {
       icon: "🎨",
-      title: "Custom Website Design",
+      title: "Custom Website Development",
       description: "Stunning, conversion-focused websites tailored specifically for your business. Every pixel crafted to turn visitors into paying customers.",
       features: ["Unique Design", "Mobile Responsive", "Fast Loading", "Conversion Optimized"],
       price: "Starting ₹5,000",
