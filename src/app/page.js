@@ -458,15 +458,7 @@ const handleTouchEnd = () => {
       />
 </span>
                 </a>
-                <a href="https://wa.me/917363833189" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                  <span className="text-2xl"><Image 
-        src="/images/bipul-chhetri-Whatsapp.png" 
-        alt="bipul chhetri Whatsapp" 
-        width={40} 
-        height={40} 
-      />
-</span>
-                </a>
+              
                 <a href="mailto:bipulchhetri06@gmail.com" className="text-gray-400 hover:text-cyan-400 transition-colors">
                   <span className="text-2xl">
                   <Image 
