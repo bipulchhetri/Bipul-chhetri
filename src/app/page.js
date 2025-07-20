@@ -75,7 +75,7 @@ export default function Home() {
       clearInterval(testimonialInterval)
       clearInterval(serviceInterval)
     }
-  }, [])
+  }, [services.length, testimonials.length])
 
   return (
     <div className={`min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
